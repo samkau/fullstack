@@ -45,7 +45,6 @@ class App extends React.Component {
   }
 
   kasvataYhdella = (key) => () => {this.setState({[key]: this.state[key]+1})}
-
   keskiarvo = () => {
     return (
       (this.state.hyva-this.state.huono)/(this.state.hyva+this.state.huono+this.state.neutraali)
